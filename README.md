@@ -1,4 +1,8 @@
-# hello-world
-Starting out things
-Hello
-Newbie here! Wanted to code for a long time so here we are.
+class Network(object): 
+    
+    def__init__(self, sizes):
+          self.num_layers = len(sizes)
+          self.sizes = sizes
+          self.biases = [np.random.randn(y, 1) for y in sizes[1:]]
+          self.weights = [np.random.randn(y, x)
+                    for x, y in zip(sizes[:-1], sizes[1:])]
