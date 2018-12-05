@@ -1,5 +1,5 @@
 #Hello World
-class Network(object): 
+    class Network(object): 
     
     def__init__(self, sizes):
           self.num_layers = len(sizes)
